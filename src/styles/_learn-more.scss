@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "NeutrifProMedium";
+  src: url("../fonts/NeutrifPro-Medium.otf");
+}
+p {
+  font-size: 19px;
+  color: $primaryColor;
+  font-family: "NeutrifProMedium";
+  font-weight: 300;
+}
+.learn-more {
+  display: flex;
+  margin-top: 10px;
+  width: auto;
+  gap: 5px;
+  cursor: pointer;
+  .angel-right {
+    transform: translateY(3.3px);
+  }
+}

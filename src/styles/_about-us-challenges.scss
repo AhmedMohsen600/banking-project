@@ -1,0 +1,36 @@
+.challenges-info {
+  width: 74%;
+  .challenges-koko {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 60px;
+    h6 {
+      color: white;
+    }
+    .on-mob {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: $mdDevices) {
+  .challenges-info {
+    width: 100%;
+    .challenges-koko {
+      font-size: 20px;
+      padding: 30px;
+      h6 {
+        width: 100%;
+      }
+      .on-mob {
+        display: block;
+      }
+      .on-desktop {
+        display: none;
+      }
+    }
+  }
+}

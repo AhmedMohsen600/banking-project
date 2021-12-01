@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "NeutrifProMedium";
+  src: url("../fonts/NeutrifPro-Medium.otf");
+}
+.bad-guy {
+  margin-left: 87px;
+  display: flex;
+  min-height: 70vh;
+  justify-content: center;
+  align-content: center;
+  .bad-info {
+    position: relative;
+    padding: 100px;
+    flex: 1;
+    background-color: #f3ebde;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 28px;
+    .on-mob {
+      display: none;
+    }
+    h2 {
+      color: black;
+      font-size: 40px;
+      font-family: "bold";
+      line-height: 1.4;
+      width: 100%;
+    }
+    h3 {
+      color: $primaryColor;
+      font-size: 24px;
+      line-height: 1.4;
+    }
+    p {
+      color: #585858;
+      font-size: 18px;
+      width: 100%;
+      line-height: 1.4;
+    }
+    .programe-view {
+      display: flex;
+      gap: 7px;
+      h4 {
+        color: $primaryColor;
+        font-family: "NeutrifProMedium";
+        font-size: 20px;
+        font-weight: 100;
+        text-align: center;
+      }
+      span {
+        transform: translateY(4px);
+      }
+    }
+  }
+  .img-holder {
+    flex: 1.3;
+    // background-image: url("../img/bankView.jpg");
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media only screen and (max-width: $mdDevices) {
+  .bad-guy {
+    background-color: #f3ebde;
+    margin: 0;
+    flex-direction: column-reverse;
+    .bad-info {
+      padding: 0px 20px 20px 20px;
+      gap: 20px;
+      .on-mob {
+        display: block;
+      }
+      .on-desktop {
+        display: none;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .img-holder {
+      padding: 15px;
+      img {
+        height: 320px;
+      }
+    }
+  }
+}

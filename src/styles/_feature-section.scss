@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "BurgessPro";
+  src: url("../fonts/BurgessPro-SemiBold.ttf");
+}
+.feature-sec {
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $primaryColor;
+  padding-bottom: 35px;
+  .feature-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    h3 {
+      color: white;
+      font-size: 46px;
+      font-family: "BurgessPro";
+    }
+    p {
+      color: white;
+    }
+  }
+  .slider-holder {
+    width: 77%;
+    margin-top: 25px;
+    margin-left: 28px;
+    height: 100%;
+    cursor: grab;
+  }
+  .view {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+    .on-mob {
+      display: none;
+    }
+    .angel-right {
+      transform: translateY(3px);
+    }
+  }
+}
+
+@media only screen and (max-width: $mdDevices) {
+  .feature-sec {
+    flex-direction: column;
+    padding-bottom: 0;
+    padding-top: 50px;
+    gap: 24px;
+    .feature-info {
+      margin-left: 0;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px;
+      width: 100%;
+      h3 {
+        font-size: 35px;
+        padding-left: 10px;
+      }
+    }
+    .slider-holder {
+      margin: 0;
+      width: 100%;
+    }
+    .view {
+      .on-desktop {
+        display: none;
+      }
+      .on-mob {
+        display: block;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .feature-sec {
+    .feature-info {
+      gap: 70px;
+    }
+  }
+}

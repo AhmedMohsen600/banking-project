@@ -1,0 +1,22 @@
+.who-are-mission {
+  display: flex;
+  flex-direction: column;
+  width: 74%;
+  .mission-info {
+    border-bottom: 1px solid #73726e;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    padding: 60px;
+  }
+}
+
+@media only screen and (max-width: $mdDevices) {
+  .who-are-mission {
+    width: 100%;
+    .mission-info {
+      padding: 35px;
+    }
+  }
+}

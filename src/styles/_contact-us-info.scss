@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "NeutrifPro-Regular";
+  src: url("../fonts/NeutrifPro-Regular.otf");
+}
+.contact-holder {
+  display: flex;
+  min-height: 100vh;
+}
+.contact-content {
+  flex: 1;
+  padding-left: 88px;
+}
+.contact-info-parent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .img-holder {
+    background-image: url("../img/blackMan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+  }
+  .contact-info-holder {
+    background-color: $primaryColor;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 39px;
+      color: white;
+      .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        h3 {
+          font-size: 32px;
+          font-family: "NeutrifPro-Regular";
+          font-weight: 100;
+        }
+        p {
+          color: white;
+          font-size: 20px;
+          font-weight: 100;
+          font-family: "NeutrifPro-Regular";
+        }
+      }
+      .line {
+        height: 1px;
+        width: 50px;
+        background-color: white;
+      }
+      .adress {
+        h3 {
+          font-size: 20px;
+          font-weight: 100;
+          font-family: "NeutrifPro-Regular";
+          line-height: 1.4;
+        }
+      }
+      .on-mob {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mdDevices) {
+  .contact-holder {
+    flex-direction: column;
+  }
+  .contact-content {
+    padding: 0;
+  }
+  .contact-info-parent {
+    // overflow-x: hidden;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .img-holder {
+      height: 406px;
+      width: 100%;
+    }
+    .contact-info-holder {
+      width: 100%;
+      background-color: $primaryColor;
+      .contact-info {
+        height: 319px;
+        padding: 25px;
+        .contact-details {
+          h3 {
+            font-size: 22px;
+          }
+        }
+        .on-mob {
+          display: block;
+        }
+        .on-desktop {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .contact-holder {
+    width: 100%;
+  }
+
+  .contact-details {
+    h3 {
+      font-size: 21px !important;
+    }
+    p {
+      font-size: 19px !important;
+    }
+  }
+  .contact-info {
+    padding: 25px 0 25px 9px !important;
+  }
+  .adress {
+    h3 {
+      font-size: 19px !important;
+    }
+  }
+}

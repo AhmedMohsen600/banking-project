@@ -1,0 +1,88 @@
+.menu-holder {
+  position: absolute;
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+  top: 0;
+  height: 100vh;
+  z-index: 10;
+  transition: transform 0.7s ease;
+  transform: translateX(-428px);
+  h4 {
+    color: white;
+    transform: rotate(-90deg);
+    font-size: 18px;
+  }
+}
+.open {
+  transform: translateX(0px);
+}
+.close {
+  transform: translateX(-428px);
+}
+.menu-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 428px;
+  padding: 60px;
+  background-color: #043b5d;
+  .link {
+    margin: 20px 0px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  p {
+    color: white;
+  }
+  img {
+    object-fit: cover;
+    width: 181px;
+  }
+  .enroll-btn {
+    background-color: #f3ebde;
+    display: flex;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    padding: 20px 40px;
+    gap: 10px;
+    color: $primaryColor;
+    font-size: 23px;
+  }
+}
+.menu-toggle {
+  border-right: 1px solid white;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 88px;
+  cursor: pointer;
+  background-color: $primaryColor;
+  .toggle-img {
+    width: 50px;
+    transition: opacity 0.7s ease;
+  }
+  .burger {
+    display: flex;
+    gap: 10px;
+    span {
+      width: 2px;
+      height: 50px;
+      background-color: white;
+      transition: transform 0.7s ease;
+    }
+  }
+}
+
+@media only screen and (max-width: $mdDevices) {
+  .menu {
+    display: none;
+  }
+}

@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+
+  p {
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  background-color: black;
+  .copy-right {
+    margin-left: 160px;
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-right: 65px;
+  }
+  .on-mob {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $mdDevices) {
+  .footer {
+    .copy-right {
+      margin-left: 0;
+      padding-left: 10px;
+    }
+    .on-mob {
+      display: block;
+    }
+    .on-desktop {
+      display: none;
+    }
+  }
+}

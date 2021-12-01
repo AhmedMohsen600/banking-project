@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/BurgessPro-SemiBold.ttf");
+}
+@font-face {
+  font-family: "NeutrifPro-Regular";
+  src: url("../fonts/NeutrifPro-Regular.otf");
+}
+.form-parent {
+  flex: 1;
+  background-color: #f3ebde;
+}
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-holder {
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+  width: 60%;
+  h2 {
+    font-family: "bold";
+    font-size: 60px;
+  }
+  form {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    h4 {
+      font-family: "NeutrifPro-Regular";
+      color: $primaryColor;
+    }
+    div {
+      height: 1px;
+      width: 100%;
+      background-color: $primaryColor;
+    }
+    input {
+      width: 100%;
+      border: none;
+      padding: 30px 0 15px 7px;
+      background-color: #f3ebde;
+      border-bottom: 1px solid $primaryColor;
+      color: $primaryColor;
+      font-size: 15px;
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid $primaryColor;
+      }
+      &::placeholder {
+        color: $primaryColor;
+        opacity: 0.4;
+        font-size: 15px;
+      }
+    }
+    textarea {
+      width: 100%;
+      border: none;
+      background-color: #f3ebde;
+      font-size: 15px;
+      padding-left: 6px;
+      resize: none;
+      padding-top: 6px;
+      margin-top: 10px;
+      color: $primaryColor;
+      border-bottom: 1px solid $primaryColor;
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid $primaryColor;
+      }
+      &::placeholder {
+        color: $primaryColor;
+        opacity: 0.4;
+        font-size: 14px;
+      }
+    }
+    button {
+      width: 100%;
+      border: none;
+      padding: 15px 0;
+      background-color: $primaryColor;
+      color: white;
+      margin-top: 40px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mdDevices) {
+  .form-holder {
+    padding-bottom: 80px;
+    h2 {
+      font-size: 36px !important;
+    }
+    width: 85%;
+  }
+}

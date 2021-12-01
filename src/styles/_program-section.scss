@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "BrugressProBold";
+  src: url("../fonts/BurgessPro-Bold.ttf");
+}
+.programe-sec {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  gap: 40px;
+  margin: 90px 0;
+  .slider-holder {
+    margin-left: 130px;
+    cursor: grab;
+  }
+  .title {
+    margin-left: 142px;
+    h2 {
+      font-size: 40px;
+      font-family: "BrugressProBold";
+      font-weight: bold;
+    }
+  }
+}
+
+@media only screen and (max-width: $mdDevices) {
+  .programe-sec {
+    .slider-holder {
+      margin-left: 0;
+    }
+    .title {
+      margin-left: 0;
+      padding-left: 10px;
+      h2 {
+        font-size: 35px;
+      }
+    }
+  }
+}

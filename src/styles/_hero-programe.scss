@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "BurgessPro-SemiBold";
+  src: url("../fonts/BurgessPro-SemiBold.ttf");
+}
+.hero-programe {
+  min-height: 60vh;
+  overflow-x: hidden;
+  display: flex;
+  padding: 0 160px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow-y: hidden;
+  h1 {
+    font-size: 88px;
+    width: auto;
+    height: auto;
+    color: black;
+    font-family: "BurgessPro-SemiBold";
+    line-height: 1.1;
+  }
+}
+// ------ media query ------
+@media only screen and (max-width: $mdDevices) {
+  .hero-programe {
+    padding: 0;
+    h1 {
+      font-size: 50px;
+      padding-left: 20px;
+    }
+    p {
+      padding-left: 20px;
+      font-size: 16px;
+    }
+    .strong {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}

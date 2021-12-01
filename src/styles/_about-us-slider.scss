@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "NeutrifPro-Regular";
+  src: url("../fonts/NeutrifPro-Regular.otf");
+}
+
+.date-parent {
+  width: 100%;
+  height: 15%;
+  border-bottom: 2px solid $primaryColor;
+  .date-text {
+    text-align: left;
+    padding: 0 30px;
+    width: 25%;
+    position: relative;
+    h3 {
+      color: $primaryColor;
+      font-size: 19px;
+      font-family: "NeutrifPro-Regular";
+      font-weight: 100;
+    }
+  }
+}
+.achives-parent {
+  width: 100%;
+  height: 75%;
+  .achives-text {
+    border: 2px solid;
+    border-color: $primaryColor;
+    margin: 40px 13px;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      font-family: "NeutrifPro-Regular";
+      font-weight: 400;
+      font-size: 20px;
+      color: $primaryColor;
+    }
+  }
+}
+#the-boss {
+  width: 600px;
+  height: 300px;
+  // cursor: grab;
+}
+@media only screen and (max-width: $mdDevices) {
+  .date-parent {
+    .date-text {
+      width: 100%;
+      padding: 0 0 0 12px;
+    }
+  }
+  .achives-parent {
+    margin: 40px 0 0 0;
+    height: 100%;
+  }
+  #the-boss {
+    width: 330px;
+    height: 430px;
+  }
+}

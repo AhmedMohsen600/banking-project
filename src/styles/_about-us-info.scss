@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "NeutrifPro-Regular";
+  src: url("../fonts/NeutrifPro-Regular.otf");
+}
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/BurgessPro-SemiBold.ttf");
+}
+.about-us-info {
+  display: flex;
+  .who-are-we {
+    position: relative;
+    margin-left: 87px;
+    padding: 60px 0px;
+    flex: 1;
+    h3 {
+      position: sticky;
+      top: 60px;
+      bottom: 60px;
+      text-align: center;
+      color: white;
+      font-size: 40px;
+      font-family: "bold";
+    }
+  }
+
+  .who-are-dec {
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 48px;
+    padding: 60px;
+    .on-mobile {
+      display: none;
+    }
+    h3 {
+      font-size: 32px;
+      color: white;
+      height: auto;
+      width: 100%;
+      line-height: 1.4;
+      font-family: "bold";
+    }
+    .full-dec {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      p {
+        color: white;
+        font-size: 19px;
+        font-family: "NeutrifPro-Regular";
+        line-height: 1.4;
+        font-weight: 100;
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mdDevices) {
+  .about-us-info {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .who-are-we {
+      margin-left: 0;
+      border-bottom: 1px solid grey;
+      padding: 20px 24px 20px 20px;
+      border-right: 0 !important;
+      width: 100%;
+
+      h3 {
+        font-size: 32px;
+        text-align: left;
+      }
+    }
+    .who-are-dec {
+      padding: 40px 24px 100px 24px;
+      width: 100%;
+      h3 {
+        font-size: 24px;
+      }
+      .on-mobile {
+        display: block;
+      }
+      .on-desktop {
+        display: none;
+      }
+    }
+  }
+}

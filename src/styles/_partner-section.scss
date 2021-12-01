@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "BurgessProBold";
+  src: url("../fonts/BurgessPro-Bold.ttf");
+}
+.partner-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  margin: 70px 0px;
+
+  .partner-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 71px;
+    align-items: center;
+
+    h3 {
+      font-size: 50px;
+      font-family: "BurgessProBold";
+    }
+    p {
+      font-size: 20px;
+      color: #858487;
+      margin-top: 20px;
+      margin-bottom: 47px;
+    }
+  }
+
+  .holder {
+    display: flex;
+    margin-left: 71px;
+    flex-wrap: wrap;
+    .small-card {
+      width: 100px;
+      height: 100px;
+      background-color: $primaryColor;
+      margin: 0 20px;
+      border-radius: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mdDevices) {
+  .partner-sec {
+    .partner-info {
+      margin-left: 0;
+      padding: 0 20px;
+      h3 {
+        font-size: 45px;
+        text-align: center;
+      }
+      p {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    .holder {
+      margin-left: 0;
+      justify-content: center;
+      align-items: center;
+      .small-card {
+        margin: 20px;
+        width: 135px;
+        height: 135px;
+      }
+    }
+  }
+}

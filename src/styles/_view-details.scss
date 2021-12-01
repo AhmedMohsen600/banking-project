@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "NeutrifProMedium";
+  src: url("../fonts/NeutrifPro-Medium.otf");
+}
+.view-details {
+  display: flex;
+  gap: 8px;
+  h3 {
+    color: $primaryColor;
+    font-family: "NeutrifProMedium";
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "NeutrifProRegular";
+  src: url("../fonts/NeutrifPro-Regular.otf");
+}
+.card {
+  margin: 0 10px;
+  height: 354px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  .img-holder {
+    background-image: url("../img/bankView.jpg");
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  h4 {
+    margin-top: 20px;
+    color: black;
+    font-size: 21px;
+    font-family: "NeutrifProRegular";
+    font-weight: 400;
+  }
+}

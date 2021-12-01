@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "medium";
+  src: url("../fonts/NeutrifPro-Medium.otf");
+}
+// main styles.
+$header1: 50px;
+$primaryColor: #064875;
+$gold: #c1945a;
+$header5: 32px;
+$blackColor: "black";
+$width: 100%;
+
+$lineHeight: 1.4;
+$textAlign: left;
+$header6: 20px;
+$fontFamily: "medium";
+body {
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: $header1;
+  color: white;
+}
+p {
+  color: white;
+}
+.super-section {
+  scroll-behavior: smooth;
+}
+h5 {
+  font-size: $header5;
+  color: $blackColor;
+  width: $width;
+  line-height: $lineHeight;
+  text-align: $textAlign;
+  font-family: $fontFamily;
+}
+h6 {
+  font-size: $header6;
+  color: $blackColor;
+  width: $width;
+  line-height: $lineHeight;
+  text-align: $textAlign;
+  font-family: $fontFamily;
+  font-weight: 100;
+}
+.pages-link {
+  text-decoration: none;
+}
+
+//------ media query----
+// Extra small devices (phones, 600px and down)
+$extraSmall: 600px;
+
+// Small devices (portrait tablets and large phones, 600px and up)
+$smalDevices: 600px;
+
+// Medium devices (landscape tablets, 768px and up)
+$mdDevices: 768px;
+
+// Large devices (laptops/desktops, 992px and up)
+$lg: 992px;
+
+// Extra large devices (large laptops and desktops, 1200px and up)
+$xl: 1200px;
+@media only screen and (max-width: $extraSmall) {
+  .dragon {
+    top: 0;
+    height: 360px;
+  }
+}
+@media only screen and (min-width: $lg) {
+  .mom {
+    display: none;
+    .menu-mob {
+      display: none;
+    }
+  }
+}
+@import "./hero-home";
+@import "./menu";
+@import "./about-section";
+@import "./program-section";
+@import "./card";
+@import "./feature-section";
+@import "./partner-section";
+@import "./footer";
+@import "./learn-more";
+@import "./info-services-sec";
+@import "./hero-programe";
+@import "./view-details";
+@import "./programe-card";
+@import "./dragon-svg";
+@import "./about-us-info";
+@import "./abou-us-strategy";
+@import "./about-us-challenges";
+@import "./about-us-reconized";
+@import "./about-us-know-us";
+@import "./time-line";
+@import "./events-card";
+@import "./about-us-slider";
+@import "./contact-us-info";
+@import "./contact-form";
+@import "./menu-mob";
+@import "./event-slider-card";
+@import "./info-services-mob";
